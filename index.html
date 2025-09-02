@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lixo Eletrônico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Lixo Eletrônico</h1>
+        <p class="descricao-site">
+            Lixo eletrônico ou e-lixo são resíduos de equipamentos eletrônicos e elétricos descartados, como celulares, computadores, baterias, eletrodomésticos e outros dispositivos. 
+            O descarte inadequado desses materiais pode causar danos ao meio ambiente e à saúde, pois muitos contêm metais pesados e substâncias tóxicas. 
+            Por isso, é importante saber como descartá-los corretamente e incentivar a reciclagem.
+        </p>
+
+        <form id="formResiduos" method="POST" action="https://formsubmit.co/mariaantoniagesteves@gmail.com">
+            
+            <!-- Dados do participante -->
+            <section class="secao">
+                <h2>Seus dados</h2>
+                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+            </section>
+
+            <!-- Pergunta 1 -->
+            <section class="secao">
+                <h2>Conhecimento</h2>
+                <label>Você sabe o que é lixo eletrônico?</label>
+                <div class="opcoes">
+                    <label><input type="radio" name="q1" value="sim" required> Sim</label>
+                    <label><input type="radio" name="q1" value="nao"> Não</label>
+                </div>
+            </section>
+
+            <!-- Pergunta 2 -->
+            <section class="secao">
+                <h2>Frequência de descarte</h2>
+                <label>Com que frequência você descarta equipamentos eletrônicos antigos?</label>
+                <div class="opcoes">
+                    <label><input type="radio" name="q2" value="sempre_corretamente" required> Sempre corretamente</label>
+                    <label><input type="radio" name="q2" value="as_vezes"> Às vezes</label>
+                    <label><input type="radio" name="q2" value="nunca"> Nunca</label>
+                </div>
+            </section>
+
+            <!-- Pergunta 3 -->
+            <section class="secao">
+                <h2>Locais de descarte</h2>
+                <label>Você conhece locais de coleta de lixo eletrônico na sua cidade?</label>
+                <div class="opcoes">
+                    <label><input type="radio" name="q3" value="sim" required> Sim</label>
+                    <label><input type="radio" name="q3" value="nao"> Não</label>
+                </div>
+            </section>
+
+            <!-- Pergunta 4 -->
+            <section class="secao">
+                <h2>Motivação</h2>
+                <label>O que impede você de descartar corretamente seus resíduos eletrônicos?</label>
+                <textarea name="q4" placeholder="Digite sua resposta..." required></textarea>
+            </section>
+
+            <!-- Pergunta 5 -->
+            <section class="secao">
+                <h2>Sugestões</h2>
+                <label>Como podemos incentivar o descarte correto de lixo eletrônico?</label>
+                <textarea name="q5" placeholder="Digite sua sugestão..."></textarea>
+            </section>
+
+            <button type="submit">Enviar

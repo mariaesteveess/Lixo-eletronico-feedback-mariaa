@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #FFE6F0, #FFD9EC);
+    margin: 0;
+    padding: 20px;
+    color: #800040;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(255,0,128,0.2);
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.descricao-site {
+    text-align: center;
+    color: #B30059;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #800040;
+    border-bottom: 2px solid #FF99CC;
+    padding-bottom: 5px;
+}
+
+/* Inputs e Textareas */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 15px;
+    border-radius: 12px;
+    border: 1px solid #800040;
+    background-color: #FFF0F5;
+    resize: vertical;
+}
+
+/* Perguntas */
+.secao {
+    background-color: #FFE6F5;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #800040;
+    transition: transform 0.2s;
+}
+
+.secao:hover {
+    transform: scale(1.02);
+}
+
+/* Opções de radio */
+.opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.opcoes label {
+    display: flex;
+    align-items: center;
+    background-color: #FFCCE6;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.opcoes label:hover {
+    background-color: #FF99CC;
+}
+
+.opcoes input[type="radio"] {
+    margin-right: 8px;
+}
+
+/* Botão enviar */
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #FF99CC, #800040);
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255,0,128,0.3);
+}
+
+/* Responsividade */
+@media(max-width:600px){
+    .opcoes {
+        flex-direction: column;
+    }
+}
